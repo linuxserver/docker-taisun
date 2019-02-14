@@ -1,0 +1,29 @@
+---
+
+# jenkins variables
+project_name: docker-taisun
+external_type: github_stable
+release_type: stable
+release_tag: latest
+ls_branch: master
+repo_vars:
+  - EXT_GIT_BRANCH = 'master'
+  - EXT_USER = 'Taisun-Docker'
+  - EXT_REPO = 'taisun'
+  - BUILD_VERSION_ARG = 'TAISUN_RELEASE'
+  - LS_USER = 'linuxserver'
+  - LS_REPO = 'docker-taisun'
+  - CONTAINER_NAME = 'taisun'
+  - DOCKERHUB_IMAGE = 'linuxserver/taisun'
+  - DEV_DOCKERHUB_IMAGE = 'lsiodev/taisun'
+  - PR_DOCKERHUB_IMAGE = 'lspipepr/taisun'
+  - DIST_IMAGE = 'alpine'
+  - MULTIARCH='true'
+  - CI='true'
+  - CI_WEB='true'
+  - CI_PORT='3000'
+  - CI_SSL='false'
+  - CI_DELAY='120'
+  - CI_DOCKERENV='TZ=US/Pacific'
+  - CI_AUTH='user:password'
+  - CI_WEBPATH=''
