@@ -21,6 +21,7 @@ RUN \
 	expect \
 	python2 && \
  pip install --upgrade pip && \
+ npm config set unsafe-perm true && \
  npm i npm@latest -g && \
  pip install docker-compose && \
  echo "**** install Taisun ****" && \
