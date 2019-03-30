@@ -142,5 +142,6 @@ Below are the instructions for updating containers:
 
 ## Versions
 
+* **30.03.19:** - Updating docker-compose build dependancies for musl libc.
 * **23.03.19:** - Switching to new Base images, shift to arm32v7 tag.
 * **13.02.19:** - Initial release.
