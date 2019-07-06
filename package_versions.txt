@@ -9,9 +9,9 @@ ca-certificates-cacert-20190108-r0
 containerd-1.2.7-r0
 coreutils-8.31-r0
 device-mapper-libs-2.02.184-r0
-docker-18.09.6-r0
-docker-cli-18.09.6-r0
-docker-engine-18.09.6-r0
+docker-18.09.7-r0
+docker-cli-18.09.7-r0
+docker-engine-18.09.7-r0
 expat-2.2.7-r0
 expect-5.45.4-r0
 gdbm-1.13-r1
@@ -19,7 +19,7 @@ http-parser-2.9.2-r0
 iptables-1.8.3-r0
 libacl-2.2.52-r6
 libattr-2.4.48-r0
-libbz2-1.0.6-r6
+libbz2-1.0.6-r7
 libc-utils-0.7.1-r0
 libcap-2.27-r0
 libcrypto1.1-1.1.1c-r0
