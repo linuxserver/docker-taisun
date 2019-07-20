@@ -9,9 +9,9 @@ ca-certificates-cacert-20190108-r0
 containerd-1.2.7-r0
 coreutils-8.31-r0
 device-mapper-libs-2.02.184-r0
-docker-18.09.7-r0
-docker-cli-18.09.7-r0
-docker-engine-18.09.7-r0
+docker-18.09.8-r0
+docker-cli-18.09.8-r0
+docker-engine-18.09.8-r0
 expat-2.2.7-r0
 expect-5.45.4-r0
 gdbm-1.13-r1
