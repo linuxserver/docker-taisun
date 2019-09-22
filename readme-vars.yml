@@ -22,8 +22,6 @@ available_architectures:
   - { arch: "{{ arch_arm64 }}", tag: "arm64v8-latest"}
   - { arch: "{{ arch_armhf }}", tag: "arm32v7-latest"}
 
-# Optional Block
-optional_block_1: false
 
 # container parameters
 common_param_env_vars_enabled: false
@@ -35,6 +33,20 @@ param_usage_include_ports: true
 param_ports:
   - { external_port: "3000", internal_port: "3000", port_desc: "Taisun WebUI." }
 param_usage_include_env: false
+
+custom_compose: |
+  ---
+  version: "2"
+  services:
+    taisun:
+      image: linuxserver/taisun
+      container_name: taisun
+      network_mode: bridge
+      volumes:
+        - /var/run/docker.sock:/var/run/docker.sock
+      ports:
+        - 3000:3000
+      restart: unless-stopped
 
 # application setup block
 app_setup_block_enabled: true
