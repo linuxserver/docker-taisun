@@ -41,7 +41,7 @@ RUN \
  git checkout "${COMPOSE_VERSION}" && \
  pip3 install \
 	-r requirements.txt && \
- ./script/build/write-git-sha && \
+ ./script/build/write-git-sha > compose/GITSHA && \
  pyinstaller docker-compose.spec && \
  mv dist/docker-compose /
 
