@@ -193,6 +193,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **19.12.19:** - Rebasing to alpine 3.11.
 * **20.07.19:** - Build compose bins from source, use minimal docker install from repos.
 * **28.06.19:** - Rebasing to alpine 3.10.
 * **30.03.19:** - Updating docker-compose build dependancies for musl libc.

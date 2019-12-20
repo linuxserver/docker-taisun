@@ -38,7 +38,7 @@ RUN \
 	| awk '/tag_name/{print $4;exit}' FS='[""]') && \
  git clone https://github.com/docker/compose.git && \
  cd compose && \
- git checkout "${COMPOSE_VERSION}" && \
+ git checkout 1.24.1 && \
  pip3 install \
 	-r requirements.txt && \
  ./script/build/write-git-sha > compose/GITSHA && \
@@ -47,7 +47,7 @@ RUN \
 
 
 # runtime stage
-FROM lsiobase/alpine:arm32v7-3.10
+FROM lsiobase/alpine:arm32v7-3.11
 
 # set version label
 ARG BUILD_DATE

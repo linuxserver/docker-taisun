@@ -55,6 +55,7 @@ app_setup_block: |
 
 # changelog
 changelogs:
+  - { date: "19.12.19:", desc: "Rebasing to alpine 3.11." }
   - { date: "20.07.19:", desc: "Build compose bins from source, use minimal docker install from repos." }
   - { date: "28.06.19:", desc: "Rebasing to alpine 3.10." }
   - { date: "30.03.19:", desc: "Updating docker-compose build dependancies for musl libc." }
