@@ -7,7 +7,7 @@ c-ares-1.15.0-r0
 ca-certificates-20191127-r1
 ca-certificates-cacert-20191127-r1
 coreutils-8.31-r0
-docker-cli-19.03.5-r0
+docker-cli-19.03.5-r1
 expect-5.45.4-r0
 libacl-2.2.53-r0
 libattr-2.4.48-r0
