@@ -1,4 +1,4 @@
-FROM lsiobase/alpine:arm32v7-3.11 as buildstage
+FROM lsiobase/alpine:arm32v7-3.12 as buildstage
 
 ARG COMPOSE_VERSION=1.24.1
 ARG PYINSTALLER_VERSION=v3.6
@@ -15,6 +15,7 @@ RUN \
 	make \
 	musl-dev \
 	openssl-dev \
+	py3-pip \
 	python3 \
 	python3-dev \
 	zlib-dev
@@ -38,13 +39,14 @@ RUN \
  cd compose && \
  git checkout ${COMPOSE_VERSION} && \
  pip3 install \
-	-r requirements.txt && \
+	-r requirements.txt \
+	--ignore-installed && \
  ./script/build/write-git-sha > compose/GITSHA && \
  pyinstaller docker-compose.spec && \
  mv dist/docker-compose /
 
 # runtime stage
-FROM lsiobase/alpine:arm32v7-3.11
+FROM lsiobase/alpine:arm32v7-3.12
 
 # set version label
 ARG BUILD_DATE
