@@ -4,8 +4,8 @@ apk-tools-2.10.5-r0
 bash-5.0.11-r1
 busybox-1.31.1-r9
 c-ares-1.15.0-r0
-ca-certificates-20191127-r1
-ca-certificates-cacert-20191127-r1
+ca-certificates-20191127-r2
+ca-certificates-cacert-20191127-r2
 coreutils-8.31-r0
 docker-cli-19.03.5-r1
 expect-5.45.4-r0
