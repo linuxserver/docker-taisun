@@ -1,4 +1,4 @@
-FROM lsiobase/alpine:3.12 as buildstage
+FROM ghcr.io/linuxserver/baseimage-alpine:3.12 as buildstage
 
 ARG COMPOSE_VERSION=1.24.1
 ARG PYINSTALLER_VERSION=v3.6
@@ -46,7 +46,7 @@ RUN \
  mv dist/docker-compose /
 
 # runtime stage
-FROM lsiobase/alpine:3.12
+FROM ghcr.io/linuxserver/baseimage-alpine:3.12
 
 # set version label
 ARG BUILD_DATE
