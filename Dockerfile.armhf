@@ -6,6 +6,7 @@ ARG PYINSTALLER_VERSION=v3.6
 RUN \
  echo "**** install build deps ****" && \
  apk add --no-cache \
+	cargo \
 	curl \
 	g++ \
 	gcc \
