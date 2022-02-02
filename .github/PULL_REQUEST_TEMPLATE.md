@@ -1,3 +1,12 @@
+# DEPRECATION NOTICE
+
+This image is deprecated. We will not offer support for this image and it will not be updated.
+This project is no longer maintained for VDI please use:
+https://github.com/linuxserver/docker-webtop
+For web based docker management try:
+https://github.com/SelfhostedPro/Yacht
+https://www.portainer.io/
+
 <!--- Provide a general summary of your changes in the Title above -->
 
 [linuxserverurl]: https://linuxserver.io
