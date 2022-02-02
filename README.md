@@ -27,6 +27,15 @@ Find us at:
 * [GitHub](https://github.com/linuxserver) - view the source for all of our repositories.
 * [Open Collective](https://opencollective.com/linuxserver) - please consider helping us by either donating or contributing to our budget
 
+# DEPRECATION NOTICE
+
+This image is deprecated. We will not offer support for this image and it will not be updated.
+This project is no longer maintained for VDI please use:
+https://github.com/linuxserver/docker-webtop
+For web based docker management try:
+https://github.com/SelfhostedPro/Yacht
+https://www.portainer.io/
+
 # [linuxserver/taisun](https://github.com/linuxserver/docker-taisun)
 
 [![Scarf.io pulls](https://scarf.sh/installs-badge/linuxserver-ci/linuxserver%2Ftaisun?color=94398d&label-color=555555&logo-color=ffffff&style=for-the-badge&package-type=docker)](https://scarf.sh/gateway/linuxserver-ci/docker/linuxserver%2Ftaisun)
@@ -208,6 +217,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **02.02.22:** - Deprecate.
 * **23.01.21:** - Rebasing to alpine 3.13.
 * **02.06.20:** - Rebasing to alpine 3.12.
 * **19.12.19:** - Rebasing to alpine 3.11.
